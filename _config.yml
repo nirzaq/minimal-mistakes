@@ -9,10 +9,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "IO.puts "Bold and Brave"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Rizqan Arief"
+description              : "Self proclaimed Programmer."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -191,6 +191,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -237,6 +238,7 @@ compress_html:
   ignore:
     envs: development
 
+remote_theme: mmistakes/minimal-mistakes
 
 # Defaults
 defaults:
@@ -251,4 +253,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
