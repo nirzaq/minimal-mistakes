@@ -9,20 +9,20 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en"
-title                    : "|>"
-title_separator          : "-"
+title                    : "hello()"
+title_separator          : "|>"
 name                     : "Rizqan Arief"
-description              : "Self proclaimed Programmer."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Self-proclaimed Programmer."
+url                      : "https://nirzaq.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/fallback.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "ayiefblog" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -61,31 +61,32 @@ naver-site-verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : &twitter "nirzaq"
 facebook:
-  username               :
+  username               : &facebook "nirzaq"
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/site_logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
+    - "https://twitter.com/nirzaq"
+    - "https://facebook.com/nirzaq"
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-109913847-1"
 
 
 # Site Author
 author:
   name             : "Rizqan Arief"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Self proclaimed Programmer."
+  avatar           : "/assets/pp.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Self-proclaimed Programmer."
   location         : "Banjarbaru"
   email            :
   uri              :
@@ -99,7 +100,7 @@ author:
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "ariefrizqon"
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
@@ -107,7 +108,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : @nirzaq
+  twitter          : "nirzaq"
   vine             :
   weibo            :
   xing             :
@@ -238,7 +239,7 @@ compress_html:
   ignore:
     envs: development
 
-remote_theme: mmistakes/minimal-mistakes
+# remote_theme: mmistakes/minimal-mistakes
 
 # Defaults
 defaults:
@@ -253,3 +254,16 @@ defaults:
       comments: # true
       share: true
       related: true
+      # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
