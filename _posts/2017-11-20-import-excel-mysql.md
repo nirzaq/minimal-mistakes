@@ -1,7 +1,6 @@
 ---
 title: "Import data dari Excel ke Mysql"
 excerpt: "Cara Import Data Dari Excel Ke Mysql"
-comments: true
 header:
   teaser: /assets/images/import-excel-teaser.svg 
   overlay_image: /assets/images/import-excel-teaser.svg
